@@ -1,0 +1,1138 @@
+@import "syntax-variables";
+
+[class^="meta thomas_aylott"] {
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+[class^="meta subtlegradient"] {
+  text-decoration: underline;
+  color: #AAAAAA;
+  background-color: #000000;
+}
+
+:not([class^="meta tag"]):not([class^="meta doctype"]):not([class^="meta attribute-with-value"]) > [class^="string"]:not(.literal):not(.regexp):not(.interpolated):not(.unquoted),
+[class^="variable parameter misc css"],
+[class^="text"] [class^="string"] [class^="source"] [class^="string"],
+[class^="string unquoted"] [class^="string"],
+[class^="string regexp"] [class^="string"],
+[class^="string interpolated"] [class^="string"],
+[class^="meta tag"] [class^="source"] [class^="string"] {
+  color: #696422;
+  background-color: rgba(222, 183, 152, 0.2);
+}
+
+:not([class^="meta tag"]) > [class^="punctuation definition string"] {
+  color: #DEB798;
+}
+
+[class^="string regexp"] [class^="punctuation definition string"],
+[class^="string quoted literal"] [class^="punctuation definition string"],
+[class^="string quoted double ruby mod"] [class^="punctuation definition string"] {
+  color: rgba(53, 50, 17, 0.2);
+}
+
+[class^="string quoted literal"],
+[class^="string quoted double ruby mod"] {
+  color: #353211;
+  background-color: rgba(193, 223, 154, 0.2);
+}
+
+[class^="string unquoted"]:not([class^="string unquoted embedded"]),
+[class^="string quoted double multiline"],
+[class^="meta scope heredoc"] {
+  color: #5E3719;
+}
+
+[class^="string interpolated"] {
+  color: #696422;
+  background-color: #E5E5E5;
+}
+
+[class^="string regexp"] {
+  color: #353211;
+  background-color: rgba(193, 223, 154, 0.2);
+}
+
+[class^="string regexp group"] {
+  background-color: rgba(193, 223, 154, 0.2);
+}
+
+[class^="string regexp group"] [class^="string regexp group"] {
+  color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(193, 223, 154, 0.2);
+}
+
+[class^="string regexp group"] [class^="string regexp group"] [class^="string regexp group"] {
+  color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(193, 223, 154, 0.2);
+}
+
+[class^="string regexp group"] [class^="string regexp group"] [class^="string regexp group"] [class^="string regexp group"] {
+  color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(193, 223, 154, 0.2);
+}
+
+[class^="string regexp character-class"] {
+  color: #83BF35;
+  background-color: rgba(193, 223, 154, 0.2);
+}
+
+[class^="string regexp arbitrary-repitition"] {
+  color: #53E1D8;
+  background-color: rgba(193, 223, 154, 0.2);
+}
+
+[class^="string regexp"] [class^="punctuation definition string"] [class^="keyword other"] {
+  color: #DEB798;
+}
+
+[class^="meta group assertion regexp"] {
+  background-color: rgba(64, 142, 204, 0.2);
+}
+
+[class^="meta assertion"],
+[class^="meta group assertion"] [class^="keyword control group regexp"],
+[class^="meta group assertion"] [class^="punctuation definition group"] {
+  color: #408ECC;
+}
+
+[class^="constant numeric"] {
+  color: #AEC73E;
+}
+
+[class^="constant character"] {
+  color: #83BF35;
+}
+
+[class^="constant language"],
+[class^="keyword other unit"],
+[class^="constant other java"],
+[class^="constant other unit"] {
+  color: #2FB125;
+}
+
+[class^="constant language pseudo-variable"] {
+  color: #2FB125;
+  background-color: rgba(151, 216, 145, 0.2);
+}
+
+[class^="constant other"],
+[class^="constant block"] {
+  color: #3EC87C;
+}
+
+[class^="support constant"],
+[class^="constant name"] {
+  color: #53E1D8;
+}
+
+[class^="variable other readwrite global pre-defined"],
+[class^="variable language"] {
+  color: #3EC87C;
+  background-color: rgba(169, 240, 235, 0.2);
+}
+
+[class^="variable other constant"] {
+  color: #2C8980;
+}
+
+[class^="support variable"] {
+  color: #34A59B;
+  background-color: rgba(169, 240, 235, 0.2);
+}
+
+[class^="variable other readwrite global"] {
+  color: #7DC2BC;
+  background-color: rgba(159, 198, 229, 0.2);
+}
+
+[class^="variable other"],
+[class^="variable js"],
+[class^="punctuation separator variable"],
+[class^="meta set variable"] [class^="variable"],
+[class^="variable scss"] {
+  color: #3579A6;
+}
+
+[class^="variable other readwrite class"] {
+  color: #408ECC;
+  background-color: rgba(43, 55, 186, 0.2);
+}
+
+[class^="variable other readwrite instance"] {
+  color: #7B868F;
+}
+
+[class^="punctuation definition"]:not([class^="meta tag"]),
+[class^="punctuation separator variable"] {
+}
+
+[class^="variable other bracket"] {
+  background-color: rgba(43, 55, 186, 0.1);
+}
+
+[class^="storage"]:not([class^="storage modifier"]) {
+  color: #E8A5EC;
+}
+
+[class^="other preprocessor"],
+[class^="entity name preprocessor"] {
+  background-color: rgba(222, 183, 152, 0.2);
+}
+
+[class^="variable language this js"] {
+  color: #999999;
+}
+
+[class^="storage modifier"] {
+  color: #DEB798;
+}
+
+[class^="entity name class"],
+[class^="entity name type class"],
+[class^="entity name type module"] {
+  color: #AA1C21;
+}
+
+[class^="support type"],
+[class^="support class"] {
+  color: #AA1C21;
+  background-color: rgba(210, 135, 137, 0.2);
+}
+
+[class^="entity name instance"],
+[class^="entity name type instance"] {
+  color: #82161E;
+}
+
+[class^="meta class instance constructor"] {
+  background-color: rgba(229, 175, 204, 0.2);
+}
+
+[class^="entity other inherited-class"],
+[class^="entity name module"] {
+  color: #C03682;
+  background-color: rgba(213, 142, 146, 0.2);
+}
+
+[class^="meta definition method"] {
+  color: #C03682;
+}
+
+[class^="variable parameter function"] {
+  color: #11154B;
+}
+
+[class^="variable parameter"]:not([class^="variable parameter misc css"]),
+[class^="meta definition method"] [class^="meta definition param-list"],
+[class^="meta function method with-arguments"] [class^="variable parameter function"] {
+  color: #11154B;
+}
+
+[class^="punctuation definition parameters"],
+[class^="variable parameter function"] [class^="punctuation separator object"] {
+  color: #D58E92;
+}
+
+[class^="meta function-call php"],
+[class^="meta function-call object php"],
+[class^="keyword other special-method"],
+[class^="meta function-call"] > *:not([class^="meta function"]) > [class^="entity name function"],
+[class^="meta function-call"] > [class^="entity name function"],
+[class^="support function"]:not([class^="variable"]) {
+  color: #B590E0;
+}
+
+[class^="meta function-call php"]:not([class^="meta function-call object php"]) {
+  font-weight: bold;
+}
+
+[class^="meta function-call"] [class^="support function"]:not([class^="variable"]) {
+  color: #5F3098;
+}
+
+[class^="support function"] {
+  background-color: rgba(222, 206, 241, 0.5);
+}
+
+[class^="punctuation section function"],
+[class^="meta brace curly function"],
+[class^="meta function-call"] [class^="punctuation section scope ruby"],
+[class^="meta function-call"] [class^="punctuation separator object"] {
+  color: #3D1F64;
+}
+
+[class^="meta group braces round"] [class^="punctuation section scope"],
+[class^="meta group braces round"] [class^="meta delimiter object comma"],
+[class^="meta group braces curly function"] [class^="meta delimiter object comma"],
+[class^="meta brace round"] {
+}
+
+[class^="meta function-call method without-arguments"],
+[class^="meta function-call method without-arguments"] [class^="entity name function"] {
+  color: #180C26;
+}
+
+[class^="keyword control"] {
+  color: #CF4DD9;
+}
+
+[class^="keyword"] {
+}
+
+[class^="keyword other"] {
+  color: #7B3FC9;
+}
+
+[class^="source regexp"] [class^="keyword operator"] {
+}
+
+[class^="keyword operator"],
+[class^="declaration function operator"],
+[class^="meta preprocessor c include"],
+[class^="punctuation separator operator"] {
+  color: #5359C6;
+}
+
+[class^="keyword operator assignment"] {
+  color: #5359C6;
+  background-color: rgba(126, 130, 212, 0.2);
+}
+
+[class^="keyword operator arithmetic"] {
+  color: #7282D2;
+}
+
+[class^="keyword operator logical"] {
+  color: #273E96;
+  background-color: rgba(126, 130, 212, 0.2);
+}
+
+[class^="keyword operator comparison"],
+[class^="keyword operator relational"] {
+  color: #172160;
+}
+
+[class^="meta class instance constructor"] [class^="keyword operator new"] {
+  color: #DF9AC0;
+}
+
+[class^="meta doctype"],
+[class^="meta tag sgml-declaration doctype"],
+[class^="meta tag sgml doctype"] {
+  color: #333333;
+  background-color: #CCCCCC;
+}
+
+[class^="meta tag"] {
+  color: #CCCCCC;
+}
+
+[class^="meta tag structure"],
+[class^="meta tag segment"] {
+  color: #999999;
+  background-color: rgba(204, 204, 204, 0.75);
+}
+
+[class^="meta tag block begin"] [class^="punctuation whitespace embedded newline"],
+[class^="meta tag block begin"] [class^="punctuation whitespace embedded leading"] {
+  background-color: #FFFFFF;
+}
+
+[class^="meta tag block"],
+[class^="meta tag xml"],
+[class^="meta tag key"] {
+  color: #B3B3B3;
+  background-color: rgba(179, 179, 179, 0.2);
+}
+
+[class^="meta tag block"] [class^="meta block inner"] {
+  color: #000000;
+}
+
+[class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta tag block"] {
+  color: #B3B3B3;
+  background-color: rgba(179, 179, 179, 0.2);
+}
+
+[class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta tag block"] {
+  color: #B3B3B3;
+  background-color: rgba(179, 179, 179, 0.2);
+}
+
+[class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta tag block"] {
+  color: #B3B3B3;
+  background-color: rgba(179, 179, 179, 0.2);
+}
+
+[class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta tag block"] {
+  color: #B3B3B3;
+  background-color: rgba(179, 179, 179, 0.2);
+}
+
+[class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta tag block"] {
+  color: #B3B3B3;
+  background-color: rgba(179, 179, 179, 0.2);
+}
+
+[class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta tag block"] {
+  color: #B3B3B3;
+  background-color: rgba(179, 179, 179, 0.2);
+}
+
+[class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta tag block"] {
+  color: #B3B3B3;
+  background-color: rgba(179, 179, 179, 0.2);
+}
+
+[class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta tag block"] {
+  color: #B3B3B3;
+  background-color: rgba(179, 179, 179, 0.2);
+}
+
+[class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta tag block"] {
+  color: #B3B3B3;
+  background-color: rgba(179, 179, 179, 0.2);
+}
+
+[class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta tag block"] {
+  color: #B3B3B3;
+  background-color: rgba(179, 179, 179, 0.2);
+}
+
+[class^="meta tag inline"],
+[class^="meta tag block"][class~="fbt"],
+[class^="meta tag block"][class~="ui tx"],
+[class^="meta tag block"][class~="ui icon-text"] {
+  color: #BE7032;
+  background-color: rgba(222, 183, 152, 0.2);
+}
+
+[class^="meta tag inline"] [class^="source"] {
+  background-color: rgba(222, 183, 152, 0.2);
+}
+
+[class^="meta tag other"],
+[class^="entity name tag style"],
+[class^="entity name tag script"],
+[class^="meta tag block script"],
+[class^="source js embedded"] [class^="punctuation definition tag html"],
+[class^="source css embedded"] [class^="punctuation definition tag html"] {
+  color: #AB1D26;
+  background-color: rgba(213, 142, 146, 0.2);
+}
+
+[class^="meta tag block"][class~="fb"] {
+  color: #AB1D26;
+  background-color: rgba(213, 142, 146, 0.2);
+}
+
+[class^="meta tag form"],
+[class^="meta tag block form"],
+[class^="meta tag inline form"] {
+  color: #408ECC;
+  background-color: rgba(159, 198, 229, 0.2);
+}
+
+[class^="meta tag block"][class~="label"],
+[class^="meta tag block"][class~="form"] {
+  color: #408ECC;
+  background-color: rgba(159, 198, 229, 0.2);
+}
+
+[class^="meta tag block"][class~="input"],
+[class^="meta tag block"][class~="button"],
+[class^="meta tag block"][class~="hidden-input"],
+[class^="meta tag block"][class~="mentions-input"],
+[class^="meta tag block"][class~="textarea"] {
+  color: #CF4DD9;
+  background-color: rgba(188, 158, 227, 0.2);
+}
+
+[class^="meta tag inline any void"],
+[class^="meta tag form any void"] {
+  color: #CF4DD9;
+  background-color: rgba(188, 158, 227, 0.2);
+}
+
+[class^="meta section html head"] {
+  background-color: #EDEDED;
+}
+
+[class^="meta section html form"] {
+  background-color: rgba(159, 198, 229, 0.1);
+}
+
+[class^="meta tag xml"] {
+  color: #999999;
+}
+
+[class^="entity name tag"] {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+[class^="entity other attribute-name"],
+[class^="meta tag"] [class^="punctuation definition string"] {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+[class^="meta tag"] [class^="string"]:not([class^="source"]),
+[class^="text"] [class^="source"] [class^="text"] [class^="meta tag"] [class^="string"]:not([class^="punctuation"]),
+[class^="meta tag"] [class^="string unquoted"],
+[class^="text"] [class^="source"] [class^="text"] [class^="meta tag"] [class^="string unquoted"] {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+[class^="meta property value html"] {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+[class^="text"] [class^="meta paragraph"] {
+  color: #666666;
+}
+
+:not([class^="meta paragraph list"]) > [class^="markup"] {
+  color: #353211;
+  background-color: rgba(204, 204, 204, 0.2);
+}
+
+[class^="markup hr"] {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+[class^="markup heading"] {
+  color: #000000;
+}
+
+[class^="markup bold"] {
+  font-weight: bold;
+  color: rgba(28, 64, 86, 0.5);
+}
+
+[class^="markup italic"] {
+  font-style: italic;
+}
+
+[class^="markup underline"] {
+  text-decoration: underline;
+}
+
+[class^="meta reference"],
+[class^="markup underline link"] {
+  color: #408ECC;
+}
+
+[class^="entity name reference"] {
+  color: #53E1D8;
+  background-color: rgba(159, 198, 229, 0.2);
+}
+
+[class^="meta reference list"] [class^="markup underline link"],
+[class^="text html textile"] [class^="markup underline link"] {
+  text-decoration: underline;
+  color: #53E1D8;
+}
+
+[class^="markup raw block"] {
+  background-color: rgba(127, 127, 127, 0.25);
+}
+
+[class^="markup quote"] {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+[class^="markup list"] [class^="meta paragraph"] {
+  color: #000000;
+}
+
+[class^="disabled"] [class^="text html markdown"] {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+[class^="text html markdown"] [class^="punctuation whitespace embedded trailing"] {
+  background-color: rgba(51, 51, 51, 0.2);
+}
+
+[class^="disabled"] [class^="text html markdown"] [class^="meta paragraph"] {
+  color: #FFFFFF;
+}
+
+[class^="disabled"] [class^="text html markdown"] [class^="markup list"] [class^="meta paragraph"] {
+  color: #AAAAAA;
+}
+
+[class^="disabled"] [class^="text html markdown"] [class^="markup heading"] {
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+[class^="disabled"] [class^="text html markdown"] [class^="string"] {
+  color: #E4C4AA;
+}
+
+[class^="source css"] {
+}
+
+[class^="meta selector"] {
+  color: #999999;
+}
+
+[class^="source css"] [class^="meta scope property-list"] [class^="meta property-value"] [class^="punctuation definition arguments"],
+[class^="source css"] [class^="meta scope property-list"] [class^="meta property-value"] [class^="punctuation separator arguments"] {
+}
+
+[class^="entity other attribute-name pseudo-element"] {
+  color: #5F3AC3;
+}
+
+[class^="entity other attribute-name pseudo-class"],
+[class^="entity other attribute-name tag pseudo-class"] {
+  color: #7B3FC9;
+}
+
+[class^="meta selector"] [class^="entity other attribute-name class"] {
+  color: #CF4DD9;
+}
+
+[class^="meta selector"] [class^="entity other attribute-name id"] {
+  color: #C03682;
+}
+
+[class^="meta selector"] [class^="entity name tag"] {
+  color: #AB1D26;
+}
+
+[class^="entity name tag wildcard"],
+[class^="entity other attribute-name universal"] {
+  font-weight: bold;
+  color: #BE7032;
+}
+
+[class^="source css"] [class^="entity other attribute-name attribute"] {
+}
+
+[class^="source css"] [class^="meta attribute-selector"] [class^="keyword operator comparison"] {
+  color: #E4C4AC;
+}
+
+[class^="meta scope property-list"] {
+  font-weight: bold;
+  color: #CCCCCC;
+}
+
+[class^="meta property-name"] {
+  color: #666666;
+}
+
+[class^="support type property-name"] {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+[class^="meta property-value"] {
+  color: #666666;
+  background-color: rgba(230, 230, 230, 0.5);
+}
+
+[class^="text latex"] {
+}
+
+[class^="text latex"] [class^="markup raw"] {
+  background-color: #FFFFFF;
+}
+
+[class^="text latex"] [class^="support function"]:not([class^="support function textit"]):not([class^="support function emph"]) {
+  color: #3D1F64;
+}
+
+[class^="text latex"] [class^="support function section"] {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+// [class^="text latex"] :not([class^="meta group"]) :not([class^="keyword operator braces"]) [class^="entity name section"] {
+//   color: #FFFFFF;
+//   background-color: #000000;
+// }
+
+[class^="text latex"] [class^="constant language general"] {
+}
+
+[class^="text latex"] [class^="keyword operator delimiter"] {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+[class^="text latex"] [class^="keyword operator brackets"] {
+  color: #666666;
+}
+
+[class^="text latex"] [class^="keyword operator braces"] {
+  color: #999999;
+}
+
+[class^="meta footnote"] {
+  color: rgba(43, 55, 186, 0.3);
+  background-color: rgba(148, 151, 220, 0.2);
+}
+
+[class^="text latex"] [class^="meta label reference"] {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+[class^="text latex"] [class^="keyword control ref"] {
+  color: #AB1D26;
+  background-color: #F2DDDE;
+}
+
+[class^="text latex"] [class^="variable parameter label reference"] {
+  color: #5E3719;
+  background-color: #EAC6C8;
+}
+
+[class^="text latex"] [class^="keyword control cite"] {
+  color: #C03682;
+  background-color: #F5E1EC;
+}
+
+[class^="variable parameter cite"] {
+  color: #300D21;
+  background-color: #EFCCE0;
+}
+
+[class^="text latex"] [class^="variable parameter label"] {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+[class^="meta function"] [class^="markup"] {
+  color: #323232;
+}
+
+[class^="text latex"] [class^="meta group braces"] {
+  color: rgba(204, 204, 204, 0.2);
+}
+
+[class^="text latex"] [class^="meta environment list"] {
+  color: rgba(204, 204, 204, 0.2);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+[class^="text latex"] [class^="meta environment list"] [class^="meta environment list"] {
+  color: rgba(204, 204, 204, 0.2);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+[class^="text latex"] [class^="meta environment list"] [class^="meta environment list"] [class^="meta environment list"] {
+  color: rgba(204, 204, 204, 0.2);
+  background-color: #FFFFFF;
+}
+
+[class^="text latex"] [class^="meta environment list"] [class^="meta environment list"] [class^="meta environment list"] [class^="meta environment list"] {
+  color: rgba(204, 204, 204, 0.2);
+}
+
+[class^="text latex"] [class^="meta environment list"] [class^="meta environment list"] [class^="meta environment list"] [class^="meta environment list"] [class^="meta environment list"] {
+  color: rgba(204, 204, 204, 0.2);
+}
+
+[class^="text latex"] [class^="meta environment list"] [class^="meta environment list"] [class^="meta environment list"] [class^="meta environment list"] [class^="meta environment list"] [class^="meta environment list"] {
+  color: rgba(204, 204, 204, 0.2);
+}
+
+[class^="text latex"] [class^="meta end-document"],
+[class^="text latex"] [class^="meta begin-document"],
+[class^="meta end-document latex"] [class^="support function"],
+[class^="meta end-document latex"] [class^="variable parameter"],
+[class^="meta begin-document latex"] [class^="support function"],
+[class^="meta begin-document latex"] [class^="variable parameter"] {
+  color: #FFFFFF;
+  background-color: #333333;
+}
+
+[class^="meta brace erb return-value"] {
+  color: #46D2A0;
+  background-color: rgba(162, 232, 207, 0.2);
+}
+
+[class^="source ruby rails embedded return-value one-line"] {
+  background-color: rgba(127, 127, 127, 0.1);
+}
+
+// :not([class^="source"] [class^="string"] [class^="source"] [class^="punctuation section embedded"])
+[class^="punctuation section embedded"],
+[class^="meta brace erb html"] {
+  color: #53E1D8;
+  background-color: rgba(83, 225, 216, 0.1);
+}
+
+[class^="source ruby rails embedded one-line"] {
+  background-color: rgba(83, 225, 216, 0.1);
+}
+
+[class^="source"] [class^="string"] [class^="source"] [class^="punctuation section embedded"] {
+  color: #CFE2F2;
+}
+
+[class^="source js embedded"] {
+  background-color: #F2F2F2;
+}
+
+[class^="source"] {
+}
+
+[class^="meta brace erb"] {
+  background-color: #FFFFFF;
+}
+
+[class^="source"] [class^="string"] [class^="source"] {
+  color: #000000;
+  background-color: rgba(204, 204, 204, 0.5);
+}
+
+[class^="source"] [class^="string interpolated"] [class^="source"] {
+  color: #666666;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+[class^="source"] [class^="source"],
+[class^="source java embedded"] {
+  background-color: rgba(204, 204, 204, 0.1);
+}
+
+[class^="text"]:not([class^="text xml strict"]) {
+  color: #000000;
+}
+
+[class^="text"] [class^="source"],
+[class^="meta scope django template"] {
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+[class^="text"] [class^="string"] [class^="source"] {
+  color: #666666;
+}
+
+[class^="text"] [class^="string"] [class^="source"] [class^="string"] [class^="source"] {
+}
+
+[class^="invalid"]:not([class^="invalid SOMETHING"]) {
+  font-weight: bold;
+  color: #EED2D5;
+  background-color: #AB1D26;
+}
+
+[class^="invalid SOMETHING"] {
+  text-decoration: underline;
+  color: #B34128;
+}
+
+[class^="meta syntax"] {
+  color: #CCCCCC;
+}
+
+[class^="comment"]:not([class^="comment line"]):not([class^="comment block documentation"]) {
+  color: #B3B3B3;
+  background-color: rgba(204, 204, 204, 0.2);
+}
+
+[class^="comment line"] {
+  color: #B3B3B3;
+}
+
+[class^="comment block documentation"] {
+  color: #666666;
+}
+
+[class^="comment"] [class^="punctuation"] {
+  color: #BFBFBF;
+}
+
+[class^="markup inserted"] {
+  color: #2E965C;
+  background-color: #CEF1DD;
+}
+
+[class^="markup deleted"] {
+  color: #8F2860;
+  background-color: #EFCCE0;
+}
+
+[class^="markup changed"] {
+  color: #8D882E;
+  background-color: #DEB798;
+}
+
+[class^="text subversion-commit"] [class^="meta scope changed-files"],
+[class^="text subversion-commit"] [class^="meta scope changed-files svn"] [class^="meta diff separator"] {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+[class^="text subversion-commit"] {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+[class^="punctuation terminator"],
+[class^="meta delimiter"],
+[class^="punctuation separator method"] {
+  font-weight: bold;
+  color: #808080;
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+[class^="punctuation terminator statement"],
+[class^="meta delimiter statement js"] {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+[class^="meta delimiter object js"] {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+[class^="string quoted single brace"],
+[class^="string quoted double brace"] {
+  font-weight: bold;
+  color: #DEB798;
+}
+
+[class^="text blog"],
+[class^="text mail"] {
+  color: #CCCCCC;
+  background-color: #232323;
+}
+
+[class^="text blog"] [class^="text"],
+[class^="text mail"] [class^="text"] {
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+[class^="meta header blog"] [class^="keyword other"],
+[class^="meta header mail"] [class^="keyword other"] {
+  color: #D8F8F6;
+  background-color: rgba(83, 225, 216, 0.1);
+}
+
+[class^="meta header blog"] [class^="string unquoted blog"],
+[class^="meta header mail"] [class^="string unquoted"] {
+  color: #DEB798;
+  background-color: rgba(141, 136, 46, 0.1);
+}
+
+[class^="source ocaml"] [class^="entity name type module"] {
+  color: #AA1C21;
+}
+
+[class^="source ocaml"] [class^="support other module"] {
+  color: #AA1C21;
+  background-color: rgba(211, 138, 140, 0.2);
+}
+
+[class^="entity name type variant"] {
+  color: #53E1D8;
+}
+
+[class^="source ocaml"] [class^="entity name tag"],
+[class^="source ocaml"] [class^="meta record definition"] {
+  color: #3EC87C;
+}
+
+[class^="punctuation separator parameters"] {
+  font-weight: bold;
+  color: #000000;
+}
+
+[class^="meta brace pipe"] {
+  color: #B3B3B3;
+  background-color: rgba(204, 204, 204, 0.2);
+}
+
+[class^="meta brace erb"],
+[class^="source ruby embedded source brace"],
+[class^="punctuation section dictionary"],
+[class^="punctuation terminator dictionary"],
+[class^="punctuation separator object"],
+[class^="punctuation separator statement"],
+[class^="punctuation separator key-value css"] {
+  font-weight: bold;
+  color: #999999;
+}
+
+[class^="punctuation section scope curly"],
+[class^="punctuation section scope"] {
+  font-weight: bold;
+  color: #666666;
+}
+
+[class^="punctuation separator parameters function js"],
+[class^="punctuation definition function"],
+[class^="punctuation separator function-return"],
+[class^="punctuation separator function-definition"],
+[class^="punctuation definition arguments"],
+[class^="punctuation separator arguments"] {
+  color: #DF9AC0;
+}
+
+[class^="meta group braces square"] [class^="punctuation section scope"],
+[class^="meta group braces square"] [class^="meta delimiter object comma"],
+[class^="meta brace square"],
+[class^="punctuation separator array"],
+[class^="punctuation section array"],
+[class^="punctuation definition array"],
+[class^="punctuation definition constant range"] {
+  font-weight: bold;
+  color: rgba(239, 219, 204, 0.5);
+  background-color: rgba(222, 183, 152, 0.1);
+}
+
+[class^="meta structure array"]/*:not([class^="punctuation definition array"])*/,
+[class^="meta definition range"]/*:not([class^="punctuation definition constant range"])*/ {
+  background-color: rgba(222, 183, 152, 0.1);
+}
+
+[class^="meta brace curly"] [class^="meta group css"] {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+[class^="meta source embedded"],
+[class^="entity other django tagbraces"] {
+  color: #999999;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+[class^="source js"] [class^="meta group braces round"],
+[class^="meta scope heredoc"] {
+}
+
+[class^="source ruby"] [class^="meta even-tab"],
+[class^="source ruby"] [class^="meta even-tab group2"],
+[class^="source ruby"] [class^="meta even-tab group4"],
+[class^="source ruby"] [class^="meta even-tab group6"],
+[class^="source ruby"] [class^="meta even-tab group8"],
+[class^="source ruby"] [class^="meta even-tab group10"],
+[class^="source ruby"] [class^="meta even-tab group12"] {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+[class^="meta block slate"] {
+  color: #999999;
+}
+
+[class^="meta block content slate"] {
+  color: #333333;
+}
+
+[class^="meta bracketed"],
+[class^="meta odd-tab group1"],
+[class^="meta group braces"],
+[class^="meta block slate"],
+[class^="text xml strict"] [class^="meta tag"],
+[class^="meta paren-group"],
+[class^="meta section"] {
+  background-color: #FAFAFA;
+}
+
+[class^="meta bracketed"] [class^="meta bracketed"],
+[class^="meta even-tab group2"],
+[class^="meta group braces"] [class^="meta group braces"],
+[class^="meta block slate"] [class^="meta block slate"],
+[class^="text xml strict"] [class^="meta tag"] [class^="meta tag"],
+[class^="meta group braces"] [class^="meta group braces"],
+[class^="meta paren-group"] [class^="meta paren-group"],
+[class^="meta section"] [class^="meta section"] {
+  background-color: #F5F5F5;
+}
+
+[class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"],
+[class^="meta odd-tab group3"],
+[class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
+[class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"],
+[class^="text xml strict"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"],
+[class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
+[class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"],
+[class^="meta section"] [class^="meta section"] [class^="meta section"] {
+  background-color: #EEEEEE;
+}
+
+[class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"],
+[class^="meta even-tab group4"],
+[class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
+[class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"],
+[class^="text xml strict"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"],
+[class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
+[class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"],
+[class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] {
+  background-color: #EAEAEA;
+}
+
+[class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"],
+[class^="meta odd-tab group5"],
+[class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
+[class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"],
+[class^="text xml strict"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"],
+[class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
+[class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"],
+[class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] {
+  background-color: #E6E6E6;
+}
+
+[class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"],
+[class^="meta even-tab group6"],
+[class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
+[class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"],
+[class^="text xml strict"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"],
+[class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
+[class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"],
+[class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] {
+  background-color: #E3E3E3;
+}
+
+[class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"],
+[class^="meta odd-tab group7"],
+[class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
+[class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"],
+[class^="text xml strict"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"],
+[class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
+[class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"],
+[class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] {
+  background-color: #E0E0E0;
+}
+
+[class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"],
+[class^="meta even-tab group8"],
+[class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
+[class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"],
+[class^="text xml strict"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"],
+[class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
+[class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"],
+[class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] {
+  background-color: #DEDEDE;
+}
+
+[class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"],
+[class^="meta odd-tab group9"],
+[class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
+[class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"],
+[class^="text xml strict"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"],
+[class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
+[class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"],
+[class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] {
+  background-color: #DBDBDB;
+}
+
+[class^="meta even-tab group10"] {
+  background-color: #E0E0E0;
+}
+
+[class^="meta odd-tab group11"] {
+  background-color: #EAEAEA;
+}
+
+[class^="meta invalid vendor microsoft trident"] {
+  text-decoration: underline;
+  background-color: rgba(170, 28, 33, 0.25);
+}
