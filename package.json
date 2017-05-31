@@ -2,7 +2,7 @@
   "name": "brilliance-white-theme",
   "description": "Brilliance White theme for Atom by SubtleGradient (Thomas Aylott)",
   "theme": "syntax",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "repository": "https://github.com/subtlegradient/brilliance-white-theme",
   "license": "MIT",
   "engines": {
