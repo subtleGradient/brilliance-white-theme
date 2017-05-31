@@ -1,1138 +1,1138 @@
 @import "syntax-variables";
 
-:not(.has-selection) > .scroll-view [class^="meta thomas_aylott"] {
+/*:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--thomas_aylott"] {
   font-weight: bold;
   color: #FFFFFF;
   background-color: #000000;
 }
-
-:not(.has-selection) > .scroll-view [class^="meta subtlegradient"] {
+*/
+/*:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--subtlegradient"] {
   text-decoration: underline;
   color: #AAAAAA;
   background-color: #000000;
 }
-
-:not([class^="meta tag"]):not([class^="meta doctype"]):not([class^="meta attribute-with-value"]) > [class^="string"]:not(.literal):not(.regexp):not(.interpolated):not(.unquoted),
-[class^="variable parameter misc css"],
-[class^="text"] [class^="string"] [class^="source"] [class^="string"],
-[class^="string unquoted"] [class^="string"],
-[class^="string regexp"] [class^="string"],
-[class^="string interpolated"] [class^="string"],
-[class^="meta tag"] [class^="source"] [class^="string"] {
+*/
+:not([class^="syntax--meta syntax--tag"]):not([class^="syntax--meta syntax--doctype"]):not([class^="syntax--meta syntax--attribute-with-value"]) > [class^="syntax--string"]:not(.literal):not(.regexp):not(.interpolated):not(.unquoted),
+[class^="syntax--variable syntax--parameter syntax--misc syntax--css"],
+[class^="syntax--text"] [class^="syntax--string"] [class^="syntax--source"] [class^="syntax--string"],
+[class^="syntax--string syntax--unquoted"] [class^="syntax--string"],
+[class^="syntax--string syntax--regexp"] [class^="syntax--string"],
+[class^="syntax--string syntax--interpolated"] [class^="syntax--string"],
+[class^="syntax--meta syntax--tag"] [class^="syntax--source"] [class^="syntax--string"] {
   color: #696422;
   background-color: rgba(222, 183, 152, 0.2);
 }
 
-:not([class^="meta tag"]) > [class^="punctuation definition string"] {
+:not([class^="syntax--meta syntax--tag"]) > [class^="syntax--punctuation syntax--definition syntax--string"] {
   color: #DEB798;
 }
 
-[class^="string regexp"] [class^="punctuation definition string"],
-[class^="string quoted literal"] [class^="punctuation definition string"],
-[class^="string quoted double ruby mod"] [class^="punctuation definition string"] {
+[class^="syntax--string syntax--regexp"] [class^="syntax--punctuation syntax--definition syntax--string"],
+[class^="syntax--string syntax--quoted syntax--literal"] [class^="syntax--punctuation syntax--definition syntax--string"],
+[class^="syntax--string syntax--quoted syntax--double syntax--ruby syntax--mod"] [class^="syntax--punctuation syntax--definition syntax--string"] {
   color: rgba(53, 50, 17, 0.2);
 }
 
-[class^="string quoted literal"],
-[class^="string quoted double ruby mod"] {
+[class^="syntax--string syntax--quoted syntax--literal"],
+[class^="syntax--string syntax--quoted syntax--double syntax--ruby syntax--mod"] {
   color: #353211;
   background-color: rgba(193, 223, 154, 0.2);
 }
 
-[class^="string unquoted"]:not([class^="string unquoted embedded"]),
-[class^="string quoted double multiline"],
-[class^="meta scope heredoc"] {
+[class^="syntax--string syntax--unquoted"]:not([class^="syntax--string syntax--unquoted syntax--embedded"]),
+[class^="syntax--string syntax--quoted syntax--double syntax--multiline"],
+[class^="syntax--meta syntax--scope syntax--heredoc"] {
   color: #5E3719;
 }
 
-:not(.has-selection) > .scroll-view [class^="string interpolated"] {
+/*:not(.has-selection) > .scroll-view [class^="syntax--string syntax--interpolated"] {
   color: #696422;
   background-color: #E5E5E5;
 }
-
-[class^="string regexp"] {
+*/
+[class^="syntax--string syntax--regexp"] {
   color: #353211;
   background-color: rgba(193, 223, 154, 0.2);
 }
 
-[class^="string regexp group"] {
+[class^="syntax--string syntax--regexp syntax--group"] {
   background-color: rgba(193, 223, 154, 0.2);
 }
 
-[class^="string regexp group"] [class^="string regexp group"] {
+[class^="syntax--string syntax--regexp syntax--group"] [class^="syntax--string syntax--regexp syntax--group"] {
   color: rgba(0, 0, 0, 0.4);
   background-color: rgba(193, 223, 154, 0.2);
 }
 
-[class^="string regexp group"] [class^="string regexp group"] [class^="string regexp group"] {
+[class^="syntax--string syntax--regexp syntax--group"] [class^="syntax--string syntax--regexp syntax--group"] [class^="syntax--string syntax--regexp syntax--group"] {
   color: rgba(0, 0, 0, 0.4);
   background-color: rgba(193, 223, 154, 0.2);
 }
 
-[class^="string regexp group"] [class^="string regexp group"] [class^="string regexp group"] [class^="string regexp group"] {
+[class^="syntax--string syntax--regexp syntax--group"] [class^="syntax--string syntax--regexp syntax--group"] [class^="syntax--string syntax--regexp syntax--group"] [class^="syntax--string syntax--regexp syntax--group"] {
   color: rgba(0, 0, 0, 0.4);
   background-color: rgba(193, 223, 154, 0.2);
 }
 
-[class^="string regexp character-class"] {
+[class^="syntax--string syntax--regexp syntax--character-class"] {
   color: #83BF35;
   background-color: rgba(193, 223, 154, 0.2);
 }
 
-[class^="string regexp arbitrary-repitition"] {
+[class^="syntax--string syntax--regexp syntax--arbitrary-repitition"] {
   color: #53E1D8;
   background-color: rgba(193, 223, 154, 0.2);
 }
 
-[class^="string regexp"] [class^="punctuation definition string"] [class^="keyword other"] {
+[class^="syntax--string syntax--regexp"] [class^="syntax--punctuation syntax--definition syntax--string"] [class^="syntax--keyword syntax--other"] {
   color: #DEB798;
 }
 
-[class^="meta group assertion regexp"] {
+[class^="syntax--meta syntax--group syntax--assertion syntax--regexp"] {
   background-color: rgba(64, 142, 204, 0.2);
 }
 
-[class^="meta assertion"],
-[class^="meta group assertion"] [class^="keyword control group regexp"],
-[class^="meta group assertion"] [class^="punctuation definition group"] {
+[class^="syntax--meta syntax--assertion"],
+[class^="syntax--meta syntax--group syntax--assertion"] [class^="syntax--keyword syntax--control syntax--group syntax--regexp"],
+[class^="syntax--meta syntax--group syntax--assertion"] [class^="syntax--punctuation syntax--definition syntax--group"] {
   color: #408ECC;
 }
 
-[class^="constant numeric"] {
+[class^="syntax--constant syntax--numeric"] {
   color: #AEC73E;
 }
 
-[class^="constant character"] {
+[class^="syntax--constant syntax--character"] {
   color: #83BF35;
 }
 
-[class^="constant language"],
-[class^="keyword other unit"],
-[class^="constant other java"],
-[class^="constant other unit"] {
+[class^="syntax--constant syntax--language"],
+[class^="syntax--keyword syntax--other syntax--unit"],
+[class^="syntax--constant syntax--other syntax--java"],
+[class^="syntax--constant syntax--other syntax--unit"] {
   color: #2FB125;
 }
 
-[class^="constant language pseudo-variable"] {
+[class^="syntax--constant syntax--language syntax--pseudo-variable"] {
   color: #2FB125;
   background-color: rgba(151, 216, 145, 0.2);
 }
 
-[class^="constant other"],
-[class^="constant block"] {
+[class^="syntax--constant syntax--other"],
+[class^="syntax--constant syntax--block"] {
   color: #3EC87C;
 }
 
-[class^="support constant"],
-[class^="constant name"] {
+[class^="syntax--support syntax--constant"],
+[class^="syntax--constant syntax--name"] {
   color: #53E1D8;
 }
 
-[class^="variable other readwrite global pre-defined"],
-[class^="variable language"] {
+[class^="syntax--variable syntax--other syntax--readwrite syntax--global syntax--pre-defined"],
+[class^="syntax--variable syntax--language"] {
   color: #3EC87C;
   background-color: rgba(169, 240, 235, 0.2);
 }
 
-[class^="variable other constant"] {
+[class^="syntax--variable syntax--other syntax--constant"] {
   color: #2C8980;
 }
 
-[class^="support variable"] {
+[class^="syntax--support syntax--variable"] {
   color: #34A59B;
   background-color: rgba(169, 240, 235, 0.2);
 }
 
-[class^="variable other readwrite global"] {
+[class^="syntax--variable syntax--other syntax--readwrite syntax--global"] {
   color: #7DC2BC;
   background-color: rgba(159, 198, 229, 0.2);
 }
 
-[class^="variable other"],
-[class^="variable js"],
-[class^="punctuation separator variable"],
-[class^="meta set variable"] [class^="variable"],
-[class^="variable scss"] {
+[class^="syntax--variable syntax--other"],
+[class^="syntax--variable syntax--js"],
+[class^="syntax--punctuation syntax--separator syntax--variable"],
+[class^="syntax--meta syntax--set syntax--variable"] [class^="syntax--variable"],
+[class^="syntax--variable syntax--scss"] {
   color: #3579A6;
 }
 
-[class^="variable other readwrite class"] {
+[class^="syntax--variable syntax--other syntax--readwrite syntax--class"] {
   color: #408ECC;
   background-color: rgba(43, 55, 186, 0.2);
 }
 
-[class^="variable other readwrite instance"] {
+[class^="syntax--variable syntax--other syntax--readwrite syntax--instance"] {
   color: #7B868F;
 }
 
-[class^="punctuation definition"]:not([class^="meta tag"]),
-[class^="punctuation separator variable"] {
+[class^="syntax--punctuation syntax--definition"]:not([class^="syntax--meta syntax--tag"]),
+[class^="syntax--punctuation syntax--separator syntax--variable"] {
 }
 
-[class^="variable other bracket"] {
+[class^="syntax--variable syntax--other syntax--bracket"] {
   background-color: rgba(43, 55, 186, 0.1);
 }
 
-[class^="storage"]:not([class^="storage modifier"]) {
+[class^="syntax--storage"]:not([class^="syntax--storage syntax--modifier"]) {
   color: #E8A5EC;
 }
 
-[class^="other preprocessor"],
-[class^="entity name preprocessor"] {
+[class^="syntax--other syntax--preprocessor"],
+[class^="syntax--entity syntax--name syntax--preprocessor"] {
   background-color: rgba(222, 183, 152, 0.2);
 }
 
-[class^="variable language this js"] {
+[class^="syntax--variable syntax--language syntax--this syntax--js"] {
   color: #999999;
 }
 
-[class^="storage modifier"] {
+[class^="syntax--storage syntax--modifier"] {
   color: #DEB798;
 }
 
-[class^="entity name class"],
-[class^="entity name type class"],
-[class^="entity name type module"] {
+[class^="syntax--entity syntax--name syntax--class"],
+[class^="syntax--entity syntax--name syntax--type syntax--class"],
+[class^="syntax--entity syntax--name syntax--type syntax--module"] {
   color: #AA1C21;
 }
 
-[class^="support type"],
-[class^="support class"] {
+[class^="syntax--support syntax--type"],
+[class^="syntax--support syntax--class"] {
   color: #AA1C21;
   background-color: rgba(210, 135, 137, 0.2);
 }
 
-[class^="entity name instance"],
-[class^="entity name type instance"] {
+[class^="syntax--entity syntax--name syntax--instance"],
+[class^="syntax--entity syntax--name syntax--type syntax--instance"] {
   color: #82161E;
 }
 
-[class^="meta class instance constructor"] {
+[class^="syntax--meta syntax--class syntax--instance syntax--constructor"] {
   background-color: rgba(229, 175, 204, 0.2);
 }
 
-[class^="entity other inherited-class"],
-[class^="entity name module"] {
+[class^="syntax--entity syntax--other syntax--inherited-class"],
+[class^="syntax--entity syntax--name syntax--module"] {
   color: #C03682;
   background-color: rgba(213, 142, 146, 0.2);
 }
 
-[class^="meta definition method"] {
+[class^="syntax--meta syntax--definition syntax--method"] {
   color: #C03682;
 }
 
-[class^="variable parameter function"] {
+[class^="syntax--variable syntax--parameter syntax--function"] {
   color: #11154B;
 }
 
-[class^="variable parameter"]:not([class^="variable parameter misc css"]),
-[class^="meta definition method"] [class^="meta definition param-list"],
-[class^="meta function method with-arguments"] [class^="variable parameter function"] {
+[class^="syntax--variable syntax--parameter"]:not([class^="syntax--variable syntax--parameter syntax--misc syntax--css"]),
+[class^="syntax--meta syntax--definition syntax--method"] [class^="syntax--meta syntax--definition syntax--param-list"],
+[class^="syntax--meta syntax--function syntax--method syntax--with-arguments"] [class^="syntax--variable syntax--parameter syntax--function"] {
   color: #11154B;
 }
 
-[class^="punctuation definition parameters"],
-[class^="variable parameter function"] [class^="punctuation separator object"] {
+[class^="syntax--punctuation syntax--definition syntax--parameters"],
+[class^="syntax--variable syntax--parameter syntax--function"] [class^="syntax--punctuation syntax--separator syntax--object"] {
   color: #D58E92;
 }
 
-[class^="meta function-call php"],
-[class^="meta function-call object php"],
-[class^="keyword other special-method"],
-[class^="meta function-call"] > *:not([class^="meta function"]) > [class^="entity name function"],
-[class^="meta function-call"] > [class^="entity name function"],
-[class^="support function"]:not([class^="variable"]) {
+[class^="syntax--meta syntax--function-call syntax--php"],
+[class^="syntax--meta syntax--function-call syntax--object syntax--php"],
+[class^="syntax--keyword syntax--other syntax--special-method"],
+[class^="syntax--meta syntax--function-call"] > *:not([class^="syntax--meta syntax--function"]) > [class^="syntax--entity syntax--name syntax--function"],
+[class^="syntax--meta syntax--function-call"] > [class^="syntax--entity syntax--name syntax--function"],
+[class^="syntax--support syntax--function"]:not([class^="syntax--variable"]) {
   color: #B590E0;
 }
 
-[class^="meta function-call php"]:not([class^="meta function-call object php"]) {
+[class^="syntax--meta syntax--function-call syntax--php"]:not([class^="syntax--meta syntax--function-call syntax--object syntax--php"]) {
   font-weight: bold;
 }
 
-[class^="meta function-call"] [class^="support function"]:not([class^="variable"]) {
+[class^="syntax--meta syntax--function-call"] [class^="syntax--support syntax--function"]:not([class^="syntax--variable"]) {
   color: #5F3098;
 }
 
-[class^="support function"] {
+[class^="syntax--support syntax--function"] {
   background-color: rgba(222, 206, 241, 0.5);
 }
 
-[class^="punctuation section function"],
-[class^="meta brace curly function"],
-[class^="meta function-call"] [class^="punctuation section scope ruby"],
-[class^="meta function-call"] [class^="punctuation separator object"] {
+[class^="syntax--punctuation syntax--section syntax--function"],
+[class^="syntax--meta syntax--brace syntax--curly syntax--function"],
+[class^="syntax--meta syntax--function-call"] [class^="syntax--punctuation syntax--section syntax--scope syntax--ruby"],
+[class^="syntax--meta syntax--function-call"] [class^="syntax--punctuation syntax--separator syntax--object"] {
   color: #3D1F64;
 }
 
-[class^="meta group braces round"] [class^="punctuation section scope"],
-[class^="meta group braces round"] [class^="meta delimiter object comma"],
-[class^="meta group braces curly function"] [class^="meta delimiter object comma"],
-[class^="meta brace round"] {
+[class^="syntax--meta syntax--group syntax--braces syntax--round"] [class^="syntax--punctuation syntax--section syntax--scope"],
+[class^="syntax--meta syntax--group syntax--braces syntax--round"] [class^="syntax--meta syntax--delimiter syntax--object syntax--comma"],
+[class^="syntax--meta syntax--group syntax--braces syntax--curly syntax--function"] [class^="syntax--meta syntax--delimiter syntax--object syntax--comma"],
+[class^="syntax--meta syntax--brace syntax--round"] {
 }
 
-[class^="meta function-call method without-arguments"],
-[class^="meta function-call method without-arguments"] [class^="entity name function"] {
+[class^="syntax--meta syntax--function-call syntax--method syntax--without-arguments"],
+[class^="syntax--meta syntax--function-call syntax--method syntax--without-arguments"] [class^="syntax--entity syntax--name syntax--function"] {
   color: #180C26;
 }
 
-[class^="keyword control"] {
+[class^="syntax--keyword syntax--control"] {
   color: #CF4DD9;
 }
 
-[class^="keyword"] {
+[class^="syntax--keyword"] {
 }
 
-[class^="keyword other"] {
+[class^="syntax--keyword syntax--other"] {
   color: #7B3FC9;
 }
 
-[class^="source regexp"] [class^="keyword operator"] {
+[class^="syntax--source syntax--regexp"] [class^="syntax--keyword syntax--operator"] {
 }
 
-[class^="keyword operator"],
-[class^="declaration function operator"],
-[class^="meta preprocessor c include"],
-[class^="punctuation separator operator"] {
+[class^="syntax--keyword syntax--operator"],
+[class^="syntax--declaration syntax--function syntax--operator"],
+[class^="syntax--meta syntax--preprocessor syntax--c syntax--include"],
+[class^="syntax--punctuation syntax--separator syntax--operator"] {
   color: #5359C6;
 }
 
-[class^="keyword operator assignment"] {
+[class^="syntax--keyword syntax--operator syntax--assignment"] {
   color: #5359C6;
   background-color: rgba(126, 130, 212, 0.2);
 }
 
-[class^="keyword operator arithmetic"] {
+[class^="syntax--keyword syntax--operator syntax--arithmetic"] {
   color: #7282D2;
 }
 
-[class^="keyword operator logical"] {
+[class^="syntax--keyword syntax--operator syntax--logical"] {
   color: #273E96;
   background-color: rgba(126, 130, 212, 0.2);
 }
 
-[class^="keyword operator comparison"],
-[class^="keyword operator relational"] {
+[class^="syntax--keyword syntax--operator syntax--comparison"],
+[class^="syntax--keyword syntax--operator syntax--relational"] {
   color: #172160;
 }
 
-[class^="meta class instance constructor"] [class^="keyword operator new"] {
+[class^="syntax--meta syntax--class syntax--instance syntax--constructor"] [class^="syntax--keyword syntax--operator syntax--new"] {
   color: #DF9AC0;
 }
 
-:not(.has-selection) > .scroll-view [class^="meta doctype"],
-:not(.has-selection) > .scroll-view [class^="meta tag sgml-declaration doctype"],
-:not(.has-selection) > .scroll-view [class^="meta tag sgml doctype"] {
+/*:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--doctype"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--tag syntax--sgml-declaration syntax--doctype"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--tag syntax--sgml syntax--doctype"] {
   color: #333333;
   background-color: #CCCCCC;
 }
-
-[class^="meta tag"] {
+*/
+[class^="syntax--meta syntax--tag"] {
   color: #CCCCCC;
 }
 
-[class^="meta tag structure"],
-[class^="meta tag segment"] {
+[class^="syntax--meta syntax--tag syntax--structure"],
+[class^="syntax--meta syntax--tag syntax--segment"] {
   color: #999999;
   background-color: rgba(204, 204, 204, 0.75);
 }
 
-:not(.has-selection) > .scroll-view [class^="meta tag block begin"] [class^="punctuation whitespace embedded newline"],
-:not(.has-selection) > .scroll-view [class^="meta tag block begin"] [class^="punctuation whitespace embedded leading"] {
+/*:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--tag syntax--block syntax--begin"] [class^="syntax--punctuation syntax--whitespace syntax--embedded syntax--newline"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--tag syntax--block syntax--begin"] [class^="syntax--punctuation syntax--whitespace syntax--embedded syntax--leading"] {
   background-color: #FFFFFF;
 }
-
-[class^="meta tag block"],
-[class^="meta tag xml"],
-[class^="meta tag key"] {
+*/
+[class^="syntax--meta syntax--tag syntax--block"],
+[class^="syntax--meta syntax--tag syntax--xml"],
+[class^="syntax--meta syntax--tag syntax--key"] {
   color: #B3B3B3;
   background-color: rgba(179, 179, 179, 0.2);
 }
 
-[class^="meta tag block"] [class^="meta block inner"] {
+[class^="syntax--meta syntax--tag syntax--block"] [class^="syntax--meta syntax--block syntax--inner"] {
   color: #000000;
 }
 
-[class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta tag block"] {
+[class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--tag syntax--block"] {
   color: #B3B3B3;
   background-color: rgba(179, 179, 179, 0.2);
 }
 
-[class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta tag block"] {
+[class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--tag syntax--block"] {
   color: #B3B3B3;
   background-color: rgba(179, 179, 179, 0.2);
 }
 
-[class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta tag block"] {
+[class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--tag syntax--block"] {
   color: #B3B3B3;
   background-color: rgba(179, 179, 179, 0.2);
 }
 
-[class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta tag block"] {
+[class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--tag syntax--block"] {
   color: #B3B3B3;
   background-color: rgba(179, 179, 179, 0.2);
 }
 
-[class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta tag block"] {
+[class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--tag syntax--block"] {
   color: #B3B3B3;
   background-color: rgba(179, 179, 179, 0.2);
 }
 
-[class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta tag block"] {
+[class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--tag syntax--block"] {
   color: #B3B3B3;
   background-color: rgba(179, 179, 179, 0.2);
 }
 
-[class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta tag block"] {
+[class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--tag syntax--block"] {
   color: #B3B3B3;
   background-color: rgba(179, 179, 179, 0.2);
 }
 
-[class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta tag block"] {
+[class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--tag syntax--block"] {
   color: #B3B3B3;
   background-color: rgba(179, 179, 179, 0.2);
 }
 
-[class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta tag block"] {
+[class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--tag syntax--block"] {
   color: #B3B3B3;
   background-color: rgba(179, 179, 179, 0.2);
 }
 
-[class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta scope tag block"] [class^="meta tag block"] {
+[class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--scope syntax--tag syntax--block"] [class^="syntax--meta syntax--tag syntax--block"] {
   color: #B3B3B3;
   background-color: rgba(179, 179, 179, 0.2);
 }
 
-[class^="meta tag inline"],
-[class^="meta tag block"][class~="fbt"],
-[class^="meta tag block"][class~="ui tx"],
-[class^="meta tag block"][class~="ui icon-text"] {
+[class^="syntax--meta syntax--tag syntax--inline"],
+[class^="syntax--meta syntax--tag syntax--block"][class~="syntax--fbt"],
+[class^="syntax--meta syntax--tag syntax--block"][class~="syntax--ui syntax--tx"],
+[class^="syntax--meta syntax--tag syntax--block"][class~="syntax--ui syntax--icon-text"] {
   color: #BE7032;
   background-color: rgba(222, 183, 152, 0.2);
 }
 
-[class^="meta tag inline"] [class^="source"] {
+[class^="syntax--meta syntax--tag syntax--inline"] [class^="syntax--source"] {
   background-color: rgba(222, 183, 152, 0.2);
 }
 
-[class^="meta tag other"],
-[class^="entity name tag style"],
-[class^="entity name tag script"],
-[class^="meta tag block script"],
-[class^="source js embedded"] [class^="punctuation definition tag html"],
-[class^="source css embedded"] [class^="punctuation definition tag html"] {
+[class^="syntax--meta syntax--tag syntax--other"],
+[class^="syntax--entity syntax--name syntax--tag syntax--style"],
+[class^="syntax--entity syntax--name syntax--tag syntax--script"],
+[class^="syntax--meta syntax--tag syntax--block syntax--script"],
+[class^="syntax--source syntax--js syntax--embedded"] [class^="syntax--punctuation syntax--definition syntax--tag syntax--html"],
+[class^="syntax--source syntax--css syntax--embedded"] [class^="syntax--punctuation syntax--definition syntax--tag syntax--html"] {
   color: #AB1D26;
   background-color: rgba(213, 142, 146, 0.2);
 }
 
-[class^="meta tag block"][class~="fb"] {
+[class^="syntax--meta syntax--tag syntax--block"][class~="syntax--fb"] {
   color: #AB1D26;
   background-color: rgba(213, 142, 146, 0.2);
 }
 
-[class^="meta tag form"],
-[class^="meta tag block form"],
-[class^="meta tag inline form"] {
+[class^="syntax--meta syntax--tag syntax--form"],
+[class^="syntax--meta syntax--tag syntax--block syntax--form"],
+[class^="syntax--meta syntax--tag syntax--inline syntax--form"] {
   color: #408ECC;
   background-color: rgba(159, 198, 229, 0.2);
 }
 
-[class^="meta tag block"][class~="label"],
-[class^="meta tag block"][class~="form"] {
+[class^="syntax--meta syntax--tag syntax--block"][class~="syntax--label"],
+[class^="syntax--meta syntax--tag syntax--block"][class~="syntax--form"] {
   color: #408ECC;
   background-color: rgba(159, 198, 229, 0.2);
 }
 
-[class^="meta tag block"][class~="input"],
-[class^="meta tag block"][class~="button"],
-[class^="meta tag block"][class~="hidden-input"],
-[class^="meta tag block"][class~="mentions-input"],
-[class^="meta tag block"][class~="textarea"] {
+[class^="syntax--meta syntax--tag syntax--block"][class~="syntax--input"],
+[class^="syntax--meta syntax--tag syntax--block"][class~="syntax--button"],
+[class^="syntax--meta syntax--tag syntax--block"][class~="syntax--hidden-input"],
+[class^="syntax--meta syntax--tag syntax--block"][class~="syntax--mentions-input"],
+[class^="syntax--meta syntax--tag syntax--block"][class~="syntax--textarea"] {
   color: #CF4DD9;
   background-color: rgba(188, 158, 227, 0.2);
 }
 
-[class^="meta tag inline any void"],
-[class^="meta tag form any void"] {
+[class^="syntax--meta syntax--tag syntax--inline syntax--any syntax--void"],
+[class^="syntax--meta syntax--tag syntax--form syntax--any syntax--void"] {
   color: #CF4DD9;
   background-color: rgba(188, 158, 227, 0.2);
 }
 
-:not(.has-selection) > .scroll-view [class^="meta section html head"] {
+/*:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--section syntax--html syntax--head"] {
   background-color: #EDEDED;
 }
-
-[class^="meta section html form"] {
+*/
+[class^="syntax--meta syntax--section syntax--html syntax--form"] {
   background-color: rgba(159, 198, 229, 0.1);
 }
 
-[class^="meta tag xml"] {
+[class^="syntax--meta syntax--tag syntax--xml"] {
   color: #999999;
 }
 
-[class^="entity name tag"] {
+[class^="syntax--entity syntax--name syntax--tag"] {
   color: rgba(0, 0, 0, 0.3);
 }
 
-[class^="entity other attribute-name"],
-[class^="meta tag"] [class^="punctuation definition string"] {
+[class^="syntax--entity syntax--other syntax--attribute-name"],
+[class^="syntax--meta syntax--tag"] [class^="syntax--punctuation syntax--definition syntax--string"] {
   color: rgba(0, 0, 0, 0.2);
 }
 
-[class^="meta tag"] [class^="string"]:not([class^="source"]),
-[class^="text"] [class^="source"] [class^="text"] [class^="meta tag"] [class^="string"]:not([class^="punctuation"]),
-[class^="meta tag"] [class^="string unquoted"],
-[class^="text"] [class^="source"] [class^="text"] [class^="meta tag"] [class^="string unquoted"] {
+[class^="syntax--meta syntax--tag"] [class^="syntax--string"]:not([class^="syntax--source"]),
+[class^="syntax--text"] [class^="syntax--source"] [class^="syntax--text"] [class^="syntax--meta syntax--tag"] [class^="syntax--string"]:not([class^="syntax--punctuation"]),
+[class^="syntax--meta syntax--tag"] [class^="syntax--string syntax--unquoted"],
+[class^="syntax--text"] [class^="syntax--source"] [class^="syntax--text"] [class^="syntax--meta syntax--tag"] [class^="syntax--string syntax--unquoted"] {
   color: rgba(0, 0, 0, 0.4);
 }
 
-[class^="meta property value html"] {
+[class^="syntax--meta syntax--property syntax--value syntax--html"] {
   color: rgba(0, 0, 0, 0.75);
 }
 
-[class^="text"] [class^="meta paragraph"] {
+[class^="syntax--text"] [class^="syntax--meta syntax--paragraph"] {
   color: #666666;
 }
 
-:not([class^="meta paragraph list"]) > [class^="markup"] {
+:not([class^="syntax--meta syntax--paragraph syntax--list"]) > [class^="syntax--markup"] {
   color: #353211;
   background-color: rgba(204, 204, 204, 0.2);
 }
 
-:not(.has-selection) > .scroll-view [class^="markup hr"] {
+/*:not(.has-selection) > .scroll-view [class^="syntax--markup syntax--hr"] {
   color: #FFFFFF;
   background-color: #000000;
 }
-
-[class^="markup heading"] {
+*/
+[class^="syntax--markup syntax--heading"] {
   color: #000000;
 }
 
-[class^="markup bold"] {
+[class^="syntax--markup syntax--bold"] {
   font-weight: bold;
   color: rgba(28, 64, 86, 0.5);
 }
 
-[class^="markup italic"] {
+[class^="syntax--markup syntax--italic"] {
   font-style: italic;
 }
 
-[class^="markup underline"] {
+[class^="syntax--markup syntax--underline"] {
   text-decoration: underline;
 }
 
-[class^="meta reference"],
-[class^="markup underline link"] {
+[class^="syntax--meta syntax--reference"],
+[class^="syntax--markup syntax--underline syntax--link"] {
   color: #408ECC;
 }
 
-[class^="entity name reference"] {
+[class^="syntax--entity syntax--name syntax--reference"] {
   color: #53E1D8;
   background-color: rgba(159, 198, 229, 0.2);
 }
 
-[class^="meta reference list"] [class^="markup underline link"],
-[class^="text html textile"] [class^="markup underline link"] {
+[class^="syntax--meta syntax--reference syntax--list"] [class^="syntax--markup syntax--underline syntax--link"],
+[class^="syntax--text syntax--html syntax--textile"] [class^="syntax--markup syntax--underline syntax--link"] {
   text-decoration: underline;
   color: #53E1D8;
 }
 
-[class^="markup raw block"] {
+[class^="syntax--markup syntax--raw syntax--block"] {
   background-color: rgba(127, 127, 127, 0.25);
 }
 
-[class^="markup quote"] {
+[class^="syntax--markup syntax--quote"] {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-[class^="markup list"] [class^="meta paragraph"] {
+[class^="syntax--markup syntax--list"] [class^="syntax--meta syntax--paragraph"] {
   color: #000000;
 }
 
-:not(.has-selection) > .scroll-view [class^="disabled"] [class^="text html markdown"] {
+/*:not(.has-selection) > .scroll-view [class^="syntax--disabled"] [class^="syntax--text syntax--html syntax--markdown"] {
   color: #FFFFFF;
   background-color: #000000;
 }
-
-[class^="text html markdown"] [class^="punctuation whitespace embedded trailing"] {
+*/
+[class^="syntax--text syntax--html syntax--markdown"] [class^="syntax--punctuation syntax--whitespace syntax--embedded syntax--trailing"] {
   background-color: rgba(51, 51, 51, 0.2);
 }
 
-[class^="disabled"] [class^="text html markdown"] [class^="meta paragraph"] {
+[class^="syntax--disabled"] [class^="syntax--text syntax--html syntax--markdown"] [class^="syntax--meta syntax--paragraph"] {
   color: #FFFFFF;
 }
 
-[class^="disabled"] [class^="text html markdown"] [class^="markup list"] [class^="meta paragraph"] {
+[class^="syntax--disabled"] [class^="syntax--text syntax--html syntax--markdown"] [class^="syntax--markup syntax--list"] [class^="syntax--meta syntax--paragraph"] {
   color: #AAAAAA;
 }
 
-[class^="disabled"] [class^="text html markdown"] [class^="markup heading"] {
+[class^="syntax--disabled"] [class^="syntax--text syntax--html syntax--markdown"] [class^="syntax--markup syntax--heading"] {
   font-weight: bold;
   color: #FFFFFF;
 }
 
-[class^="disabled"] [class^="text html markdown"] [class^="string"] {
+[class^="syntax--disabled"] [class^="syntax--text syntax--html syntax--markdown"] [class^="syntax--string"] {
   color: #E4C4AA;
 }
 
-[class^="source css"] {
+[class^="syntax--source syntax--css"] {
 }
 
-[class^="meta selector"] {
+[class^="syntax--meta syntax--selector"] {
   color: #999999;
 }
 
-[class^="source css"] [class^="meta scope property-list"] [class^="meta property-value"] [class^="punctuation definition arguments"],
-[class^="source css"] [class^="meta scope property-list"] [class^="meta property-value"] [class^="punctuation separator arguments"] {
+[class^="syntax--source syntax--css"] [class^="syntax--meta syntax--scope syntax--property-list"] [class^="syntax--meta syntax--property-value"] [class^="syntax--punctuation syntax--definition syntax--arguments"],
+[class^="syntax--source syntax--css"] [class^="syntax--meta syntax--scope syntax--property-list"] [class^="syntax--meta syntax--property-value"] [class^="syntax--punctuation syntax--separator syntax--arguments"] {
 }
 
-[class^="entity other attribute-name pseudo-element"] {
+[class^="syntax--entity syntax--other syntax--attribute-name syntax--pseudo-element"] {
   color: #5F3AC3;
 }
 
-[class^="entity other attribute-name pseudo-class"],
-[class^="entity other attribute-name tag pseudo-class"] {
+[class^="syntax--entity syntax--other syntax--attribute-name syntax--pseudo-class"],
+[class^="syntax--entity syntax--other syntax--attribute-name syntax--tag syntax--pseudo-class"] {
   color: #7B3FC9;
 }
 
-[class^="meta selector"] [class^="entity other attribute-name class"] {
+[class^="syntax--meta syntax--selector"] [class^="syntax--entity syntax--other syntax--attribute-name syntax--class"] {
   color: #CF4DD9;
 }
 
-[class^="meta selector"] [class^="entity other attribute-name id"] {
+[class^="syntax--meta syntax--selector"] [class^="syntax--entity syntax--other syntax--attribute-name syntax--id"] {
   color: #C03682;
 }
 
-[class^="meta selector"] [class^="entity name tag"] {
+[class^="syntax--meta syntax--selector"] [class^="syntax--entity syntax--name syntax--tag"] {
   color: #AB1D26;
 }
 
-[class^="entity name tag wildcard"],
-[class^="entity other attribute-name universal"] {
+[class^="syntax--entity syntax--name syntax--tag syntax--wildcard"],
+[class^="syntax--entity syntax--other syntax--attribute-name syntax--universal"] {
   font-weight: bold;
   color: #BE7032;
 }
 
-[class^="source css"] [class^="entity other attribute-name attribute"] {
+[class^="syntax--source syntax--css"] [class^="syntax--entity syntax--other syntax--attribute-name syntax--attribute"] {
 }
 
-[class^="source css"] [class^="meta attribute-selector"] [class^="keyword operator comparison"] {
+[class^="syntax--source syntax--css"] [class^="syntax--meta syntax--attribute-selector"] [class^="syntax--keyword syntax--operator syntax--comparison"] {
   color: #E4C4AC;
 }
 
-[class^="meta scope property-list"] {
+[class^="syntax--meta syntax--scope syntax--property-list"] {
   font-weight: bold;
   color: #CCCCCC;
 }
 
-[class^="meta property-name"] {
+[class^="syntax--meta syntax--property-name"] {
   color: #666666;
 }
 
-:not(.has-selection) > .scroll-view [class^="support type property-name"] {
+/*:not(.has-selection) > .scroll-view [class^="syntax--support syntax--type syntax--property-name"] {
   color: #000000;
   background-color: #F2F2F2;
 }
-
-[class^="meta property-value"] {
+*/
+[class^="syntax--meta syntax--property-value"] {
   color: #666666;
   background-color: rgba(230, 230, 230, 0.5);
 }
 
-[class^="text latex"] {
+[class^="syntax--text syntax--latex"] {
 }
 
-:not(.has-selection) > .scroll-view [class^="text latex"] [class^="markup raw"] {
+/*:not(.has-selection) > .scroll-view [class^="syntax--text syntax--latex"] [class^="syntax--markup syntax--raw"] {
   background-color: #FFFFFF;
 }
-
-[class^="text latex"] [class^="support function"]:not([class^="support function textit"]):not([class^="support function emph"]) {
+*/
+[class^="syntax--text syntax--latex"] [class^="syntax--support syntax--function"]:not([class^="syntax--support syntax--function syntax--textit"]):not([class^="syntax--support syntax--function syntax--emph"]) {
   color: #3D1F64;
 }
 
-[class^="text latex"] [class^="support function section"] {
+[class^="syntax--text syntax--latex"] [class^="syntax--support syntax--function syntax--section"] {
   color: rgba(0, 0, 0, 0.75);
 }
 
-// [class^="text latex"] :not([class^="meta group"]) :not([class^="keyword operator braces"]) [class^="entity name section"] {
+// [class^="syntax--text syntax--latex"] :not([class^="syntax--meta syntax--group"]) :not([class^="syntax--keyword syntax--operator syntax--braces"]) [class^="syntax--entity syntax--name syntax--section"] {
 //   color: #FFFFFF;
 //   background-color: #000000;
 // }
 
-[class^="text latex"] [class^="constant language general"] {
+[class^="syntax--text syntax--latex"] [class^="syntax--constant syntax--language syntax--general"] {
 }
 
-[class^="text latex"] [class^="keyword operator delimiter"] {
+[class^="syntax--text syntax--latex"] [class^="syntax--keyword syntax--operator syntax--delimiter"] {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-[class^="text latex"] [class^="keyword operator brackets"] {
+[class^="syntax--text syntax--latex"] [class^="syntax--keyword syntax--operator syntax--brackets"] {
   color: #666666;
 }
 
-[class^="text latex"] [class^="keyword operator braces"] {
+[class^="syntax--text syntax--latex"] [class^="syntax--keyword syntax--operator syntax--braces"] {
   color: #999999;
 }
 
-[class^="meta footnote"] {
+[class^="syntax--meta syntax--footnote"] {
   color: rgba(43, 55, 186, 0.3);
   background-color: rgba(148, 151, 220, 0.2);
 }
 
-[class^="text latex"] [class^="meta label reference"] {
+[class^="syntax--text syntax--latex"] [class^="syntax--meta syntax--label syntax--reference"] {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-:not(.has-selection) > .scroll-view [class^="text latex"] [class^="keyword control ref"] {
+/*:not(.has-selection) > .scroll-view [class^="syntax--text syntax--latex"] [class^="syntax--keyword syntax--control syntax--ref"] {
   color: #AB1D26;
   background-color: #F2DDDE;
 }
 
-:not(.has-selection) > .scroll-view [class^="text latex"] [class^="variable parameter label reference"] {
+:not(.has-selection) > .scroll-view [class^="syntax--text syntax--latex"] [class^="syntax--variable syntax--parameter syntax--label syntax--reference"] {
   color: #5E3719;
   background-color: #EAC6C8;
 }
 
-:not(.has-selection) > .scroll-view [class^="text latex"] [class^="keyword control cite"] {
+:not(.has-selection) > .scroll-view [class^="syntax--text syntax--latex"] [class^="syntax--keyword syntax--control syntax--cite"] {
   color: #C03682;
   background-color: #F5E1EC;
 }
 
-:not(.has-selection) > .scroll-view [class^="variable parameter cite"] {
+:not(.has-selection) > .scroll-view [class^="syntax--variable syntax--parameter syntax--cite"] {
   color: #300D21;
   background-color: #EFCCE0;
 }
-
-[class^="text latex"] [class^="variable parameter label"] {
+*/
+[class^="syntax--text syntax--latex"] [class^="syntax--variable syntax--parameter syntax--label"] {
   color: rgba(0, 0, 0, 0.5);
 }
 
-[class^="meta function"] [class^="markup"] {
+[class^="syntax--meta syntax--function"] [class^="syntax--markup"] {
   color: #323232;
 }
 
-[class^="text latex"] [class^="meta group braces"] {
+[class^="syntax--text syntax--latex"] [class^="syntax--meta syntax--group syntax--braces"] {
   color: rgba(204, 204, 204, 0.2);
 }
 
-[class^="text latex"] [class^="meta environment list"] {
-  color: rgba(204, 204, 204, 0.2);
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-[class^="text latex"] [class^="meta environment list"] [class^="meta environment list"] {
+[class^="syntax--text syntax--latex"] [class^="syntax--meta syntax--environment syntax--list"] {
   color: rgba(204, 204, 204, 0.2);
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-:not(.has-selection) > .scroll-view [class^="text latex"] [class^="meta environment list"] [class^="meta environment list"] [class^="meta environment list"] {
+[class^="syntax--text syntax--latex"] [class^="syntax--meta syntax--environment syntax--list"] [class^="syntax--meta syntax--environment syntax--list"] {
+  color: rgba(204, 204, 204, 0.2);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*:not(.has-selection) > .scroll-view [class^="syntax--text syntax--latex"] [class^="syntax--meta syntax--environment syntax--list"] [class^="syntax--meta syntax--environment syntax--list"] [class^="syntax--meta syntax--environment syntax--list"] {
   color: rgba(204, 204, 204, 0.2);
   background-color: #FFFFFF;
 }
-
-[class^="text latex"] [class^="meta environment list"] [class^="meta environment list"] [class^="meta environment list"] [class^="meta environment list"] {
+*/
+[class^="syntax--text syntax--latex"] [class^="syntax--meta syntax--environment syntax--list"] [class^="syntax--meta syntax--environment syntax--list"] [class^="syntax--meta syntax--environment syntax--list"] [class^="syntax--meta syntax--environment syntax--list"] {
   color: rgba(204, 204, 204, 0.2);
 }
 
-[class^="text latex"] [class^="meta environment list"] [class^="meta environment list"] [class^="meta environment list"] [class^="meta environment list"] [class^="meta environment list"] {
+[class^="syntax--text syntax--latex"] [class^="syntax--meta syntax--environment syntax--list"] [class^="syntax--meta syntax--environment syntax--list"] [class^="syntax--meta syntax--environment syntax--list"] [class^="syntax--meta syntax--environment syntax--list"] [class^="syntax--meta syntax--environment syntax--list"] {
   color: rgba(204, 204, 204, 0.2);
 }
 
-[class^="text latex"] [class^="meta environment list"] [class^="meta environment list"] [class^="meta environment list"] [class^="meta environment list"] [class^="meta environment list"] [class^="meta environment list"] {
+[class^="syntax--text syntax--latex"] [class^="syntax--meta syntax--environment syntax--list"] [class^="syntax--meta syntax--environment syntax--list"] [class^="syntax--meta syntax--environment syntax--list"] [class^="syntax--meta syntax--environment syntax--list"] [class^="syntax--meta syntax--environment syntax--list"] [class^="syntax--meta syntax--environment syntax--list"] {
   color: rgba(204, 204, 204, 0.2);
 }
 
-:not(.has-selection) > .scroll-view [class^="text latex"] [class^="meta end-document"],
-:not(.has-selection) > .scroll-view [class^="text latex"] [class^="meta begin-document"],
-:not(.has-selection) > .scroll-view [class^="meta end-document latex"] [class^="support function"],
-:not(.has-selection) > .scroll-view [class^="meta end-document latex"] [class^="variable parameter"],
-:not(.has-selection) > .scroll-view [class^="meta begin-document latex"] [class^="support function"],
-:not(.has-selection) > .scroll-view [class^="meta begin-document latex"] [class^="variable parameter"] {
+/*:not(.has-selection) > .scroll-view [class^="syntax--text syntax--latex"] [class^="syntax--meta syntax--end-document"],
+:not(.has-selection) > .scroll-view [class^="syntax--text syntax--latex"] [class^="syntax--meta syntax--begin-document"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--end-document syntax--latex"] [class^="syntax--support syntax--function"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--end-document syntax--latex"] [class^="syntax--variable syntax--parameter"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--begin-document syntax--latex"] [class^="syntax--support syntax--function"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--begin-document syntax--latex"] [class^="syntax--variable syntax--parameter"] {
   color: #FFFFFF;
   background-color: #333333;
 }
-
-[class^="meta brace erb return-value"] {
+*/
+[class^="syntax--meta syntax--brace syntax--erb syntax--return-value"] {
   color: #46D2A0;
   background-color: rgba(162, 232, 207, 0.2);
 }
 
-[class^="source ruby rails embedded return-value one-line"] {
+[class^="syntax--source syntax--ruby syntax--rails syntax--embedded syntax--return-value syntax--one-line"] {
   background-color: rgba(127, 127, 127, 0.1);
 }
 
-// :not([class^="source"] [class^="string"] [class^="source"] [class^="punctuation section embedded"])
-[class^="punctuation section embedded"],
-[class^="meta brace erb html"] {
+// :not([class^="syntax--source"] [class^="syntax--string"] [class^="syntax--source"] [class^="syntax--punctuation syntax--section syntax--embedded"])
+[class^="syntax--punctuation syntax--section syntax--embedded"],
+[class^="syntax--meta syntax--brace syntax--erb syntax--html"] {
   color: #53E1D8;
   background-color: rgba(83, 225, 216, 0.1);
 }
 
-[class^="source ruby rails embedded one-line"] {
+[class^="syntax--source syntax--ruby syntax--rails syntax--embedded syntax--one-line"] {
   background-color: rgba(83, 225, 216, 0.1);
 }
 
-[class^="source"] [class^="string"] [class^="source"] [class^="punctuation section embedded"] {
+[class^="syntax--source"] [class^="syntax--string"] [class^="syntax--source"] [class^="syntax--punctuation syntax--section syntax--embedded"] {
   color: #CFE2F2;
 }
 
-:not(.has-selection) > .scroll-view [class^="source js embedded"] {
+/*:not(.has-selection) > .scroll-view [class^="syntax--source syntax--js syntax--embedded"] {
   background-color: #F2F2F2;
 }
-
-[class^="source"] {
+*/
+/*[class^="syntax--source"] {
 }
-
-:not(.has-selection) > .scroll-view [class^="meta brace erb"] {
+*/
+/*:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--brace syntax--erb"] {
   background-color: #FFFFFF;
 }
-
-[class^="source"] [class^="string"] [class^="source"] {
+*/
+[class^="syntax--source"] [class^="syntax--string"] [class^="syntax--source"] {
   color: #000000;
   background-color: rgba(204, 204, 204, 0.5);
 }
 
-[class^="source"] [class^="string interpolated"] [class^="source"] {
+[class^="syntax--source"] [class^="syntax--string syntax--interpolated"] [class^="syntax--source"] {
   color: #666666;
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-[class^="source"] [class^="source"],
-[class^="source java embedded"] {
+[class^="syntax--source"] [class^="syntax--source"],
+[class^="syntax--source syntax--java syntax--embedded"] {
   background-color: rgba(204, 204, 204, 0.1);
 }
 
-[class^="text"]:not([class^="text xml strict"]) {
+[class^="syntax--text"]:not([class^="syntax--text syntax--xml syntax--strict"]) {
   color: #000000;
 }
 
-:not(.has-selection) > .scroll-view [class^="text"] [class^="source"],
-:not(.has-selection) > .scroll-view [class^="meta scope django template"] {
+/*:not(.has-selection) > .scroll-view [class^="syntax--text"] [class^="syntax--source"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--scope syntax--django syntax--template"] {
   color: #333333;
   background-color: #FFFFFF;
 }
-
-[class^="text"] [class^="string"] [class^="source"] {
+*/
+[class^="syntax--text"] [class^="syntax--string"] [class^="syntax--source"] {
   color: #666666;
 }
 
-[class^="text"] [class^="string"] [class^="source"] [class^="string"] [class^="source"] {
+[class^="syntax--text"] [class^="syntax--string"] [class^="syntax--source"] [class^="syntax--string"] [class^="syntax--source"] {
 }
 
-:not(.has-selection) > .scroll-view [class^="invalid"]:not([class^="invalid SOMETHING"]) {
+/*:not(.has-selection) > .scroll-view [class^="syntax--invalid"]:not([class^="syntax--invalid syntax--syntax--syntax--syntax--syntax--syntax--syntax--syntax--syntax--syntax--syntax--syntax--syntax--syntax--syntax--syntax--syntax--syntax--syntax--syntax--syntax--syntax--SOMETHING"]) {
   font-weight: bold;
   color: #EED2D5;
   background-color: #AB1D26;
 }
-
-[class^="invalid SOMETHING"] {
+*/
+[class^="syntax--invalid syntax--SOMETHING"] {
   text-decoration: underline;
   color: #B34128;
 }
 
-[class^="meta syntax"] {
+[class^="syntax--meta syntax--syntax"] {
   color: #CCCCCC;
 }
 
-[class^="comment"]:not([class^="comment line"]):not([class^="comment block documentation"]) {
+[class^="syntax--comment"]:not([class^="syntax--comment syntax--line"]):not([class^="syntax--comment syntax--block syntax--documentation"]) {
   color: #B3B3B3;
   background-color: rgba(204, 204, 204, 0.2);
 }
 
-[class^="comment line"] {
+[class^="syntax--comment syntax--line"] {
   color: #B3B3B3;
 }
 
-[class^="comment block documentation"] {
+[class^="syntax--comment syntax--block syntax--documentation"] {
   color: #666666;
 }
 
-[class^="comment"] [class^="punctuation"] {
+[class^="syntax--comment"] [class^="syntax--punctuation"] {
   color: #BFBFBF;
 }
 
-:not(.has-selection) > .scroll-view [class^="markup inserted"] {
+/*:not(.has-selection) > .scroll-view [class^="syntax--markup syntax--inserted"] {
   color: #2E965C;
   background-color: #CEF1DD;
 }
 
-:not(.has-selection) > .scroll-view [class^="markup deleted"] {
+:not(.has-selection) > .scroll-view [class^="syntax--markup syntax--deleted"] {
   color: #8F2860;
   background-color: #EFCCE0;
 }
 
-:not(.has-selection) > .scroll-view [class^="markup changed"] {
+:not(.has-selection) > .scroll-view [class^="syntax--markup syntax--changed"] {
   color: #8D882E;
   background-color: #DEB798;
 }
 
-:not(.has-selection) > .scroll-view [class^="text subversion-commit"] [class^="meta scope changed-files"],
-:not(.has-selection) > .scroll-view [class^="text subversion-commit"] [class^="meta scope changed-files svn"] [class^="meta diff separator"] {
+:not(.has-selection) > .scroll-view [class^="syntax--text syntax--subversion-commit"] [class^="syntax--meta syntax--scope syntax--changed-files"],
+:not(.has-selection) > .scroll-view [class^="syntax--text syntax--subversion-commit"] [class^="syntax--meta syntax--scope syntax--changed-files syntax--svn"] [class^="syntax--meta syntax--diff syntax--separator"] {
   color: #000000;
   background-color: #FFFFFF;
 }
 
-:not(.has-selection) > .scroll-view [class^="text subversion-commit"] {
+:not(.has-selection) > .scroll-view [class^="syntax--text syntax--subversion-commit"] {
   color: #FFFFFF;
   background-color: #000000;
 }
-
-[class^="punctuation terminator"],
-[class^="meta delimiter"],
-[class^="punctuation separator method"] {
+*/
+[class^="syntax--punctuation syntax--terminator"],
+[class^="syntax--meta syntax--delimiter"],
+[class^="syntax--punctuation syntax--separator syntax--method"] {
   font-weight: bold;
   color: #808080;
   background-color: rgba(0, 0, 0, 0.01);
 }
 
-[class^="punctuation terminator statement"],
-[class^="meta delimiter statement js"] {
+[class^="syntax--punctuation syntax--terminator syntax--statement"],
+[class^="syntax--meta syntax--delimiter syntax--statement syntax--js"] {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-[class^="meta delimiter object js"] {
+[class^="syntax--meta syntax--delimiter syntax--object syntax--js"] {
   background-color: rgba(255, 255, 255, 0.25);
 }
 
-[class^="string quoted single brace"],
-[class^="string quoted double brace"] {
+[class^="syntax--string syntax--quoted syntax--single syntax--brace"],
+[class^="syntax--string syntax--quoted syntax--double syntax--brace"] {
   font-weight: bold;
   color: #DEB798;
 }
 
-:not(.has-selection) > .scroll-view [class^="text blog"],
-:not(.has-selection) > .scroll-view [class^="text mail"] {
+/*:not(.has-selection) > .scroll-view [class^="syntax--text syntax--blog"],
+:not(.has-selection) > .scroll-view [class^="syntax--text syntax--mail"] {
   color: #CCCCCC;
   background-color: #232323;
 }
 
-:not(.has-selection) > .scroll-view [class^="text blog"] [class^="text"],
-:not(.has-selection) > .scroll-view [class^="text mail"] [class^="text"] {
+:not(.has-selection) > .scroll-view [class^="syntax--text syntax--blog"] [class^="syntax--text"],
+:not(.has-selection) > .scroll-view [class^="syntax--text syntax--mail"] [class^="syntax--text"] {
   color: #333333;
   background-color: #FFFFFF;
 }
-
-[class^="meta header blog"] [class^="keyword other"],
-[class^="meta header mail"] [class^="keyword other"] {
+*/
+[class^="syntax--meta syntax--header syntax--blog"] [class^="syntax--keyword syntax--other"],
+[class^="syntax--meta syntax--header syntax--mail"] [class^="syntax--keyword syntax--other"] {
   color: #D8F8F6;
   background-color: rgba(83, 225, 216, 0.1);
 }
 
-[class^="meta header blog"] [class^="string unquoted blog"],
-[class^="meta header mail"] [class^="string unquoted"] {
+[class^="syntax--meta syntax--header syntax--blog"] [class^="syntax--string syntax--unquoted syntax--blog"],
+[class^="syntax--meta syntax--header syntax--mail"] [class^="syntax--string syntax--unquoted"] {
   color: #DEB798;
   background-color: rgba(141, 136, 46, 0.1);
 }
 
-[class^="source ocaml"] [class^="entity name type module"] {
+[class^="syntax--source syntax--ocaml"] [class^="syntax--entity syntax--name syntax--type syntax--module"] {
   color: #AA1C21;
 }
 
-[class^="source ocaml"] [class^="support other module"] {
+[class^="syntax--source syntax--ocaml"] [class^="syntax--support syntax--other syntax--module"] {
   color: #AA1C21;
   background-color: rgba(211, 138, 140, 0.2);
 }
 
-[class^="entity name type variant"] {
+[class^="syntax--entity syntax--name syntax--type syntax--variant"] {
   color: #53E1D8;
 }
 
-[class^="source ocaml"] [class^="entity name tag"],
-[class^="source ocaml"] [class^="meta record definition"] {
+[class^="syntax--source syntax--ocaml"] [class^="syntax--entity syntax--name syntax--tag"],
+[class^="syntax--source syntax--ocaml"] [class^="syntax--meta syntax--record syntax--definition"] {
   color: #3EC87C;
 }
 
-[class^="punctuation separator parameters"] {
+[class^="syntax--punctuation syntax--separator syntax--parameters"] {
   font-weight: bold;
   color: #000000;
 }
 
-[class^="meta brace pipe"] {
+[class^="syntax--meta syntax--brace syntax--pipe"] {
   color: #B3B3B3;
   background-color: rgba(204, 204, 204, 0.2);
 }
 
-[class^="meta brace erb"],
-[class^="source ruby embedded source brace"],
-[class^="punctuation section dictionary"],
-[class^="punctuation terminator dictionary"],
-[class^="punctuation separator object"],
-[class^="punctuation separator statement"],
-[class^="punctuation separator key-value css"] {
+[class^="syntax--meta syntax--brace syntax--erb"],
+[class^="syntax--source syntax--ruby syntax--embedded syntax--source syntax--brace"],
+[class^="syntax--punctuation syntax--section syntax--dictionary"],
+[class^="syntax--punctuation syntax--terminator syntax--dictionary"],
+[class^="syntax--punctuation syntax--separator syntax--object"],
+[class^="syntax--punctuation syntax--separator syntax--statement"],
+[class^="syntax--punctuation syntax--separator syntax--key-value syntax--css"] {
   font-weight: bold;
   color: #999999;
 }
 
-[class^="punctuation section scope curly"],
-[class^="punctuation section scope"] {
+[class^="syntax--punctuation syntax--section syntax--scope syntax--curly"],
+[class^="syntax--punctuation syntax--section syntax--scope"] {
   font-weight: bold;
   color: #666666;
 }
 
-[class^="punctuation separator parameters function js"],
-[class^="punctuation definition function"],
-[class^="punctuation separator function-return"],
-[class^="punctuation separator function-definition"],
-[class^="punctuation definition arguments"],
-[class^="punctuation separator arguments"] {
+[class^="syntax--punctuation syntax--separator syntax--parameters syntax--function syntax--js"],
+[class^="syntax--punctuation syntax--definition syntax--function"],
+[class^="syntax--punctuation syntax--separator syntax--function-return"],
+[class^="syntax--punctuation syntax--separator syntax--function-definition"],
+[class^="syntax--punctuation syntax--definition syntax--arguments"],
+[class^="syntax--punctuation syntax--separator syntax--arguments"] {
   color: #DF9AC0;
 }
 
-[class^="meta group braces square"] [class^="punctuation section scope"],
-[class^="meta group braces square"] [class^="meta delimiter object comma"],
-[class^="meta brace square"],
-[class^="punctuation separator array"],
-[class^="punctuation section array"],
-[class^="punctuation definition array"],
-[class^="punctuation definition constant range"] {
+[class^="syntax--meta syntax--group syntax--braces syntax--square"] [class^="syntax--punctuation syntax--section syntax--scope"],
+[class^="syntax--meta syntax--group syntax--braces syntax--square"] [class^="syntax--meta syntax--delimiter syntax--object syntax--comma"],
+[class^="syntax--meta syntax--brace syntax--square"],
+[class^="syntax--punctuation syntax--separator syntax--array"],
+[class^="syntax--punctuation syntax--section syntax--array"],
+[class^="syntax--punctuation syntax--definition syntax--array"],
+[class^="syntax--punctuation syntax--definition syntax--constant syntax--range"] {
   font-weight: bold;
   color: rgba(239, 219, 204, 0.5);
   background-color: rgba(222, 183, 152, 0.1);
 }
 
-[class^="meta structure array"]/*:not([class^="punctuation definition array"])*/,
-[class^="meta definition range"]/*:not([class^="punctuation definition constant range"])*/ {
+[class^="syntax--meta syntax--structure syntax--array"]/*:not([class^="syntax--punctuation syntax--definition syntax--array"])*/,
+[class^="syntax--meta syntax--definition syntax--range"]/*:not([class^="syntax--punctuation syntax--definition syntax--constant syntax--range"])*/ {
   background-color: rgba(222, 183, 152, 0.1);
 }
 
-[class^="meta brace curly"] [class^="meta group css"] {
+[class^="syntax--meta syntax--brace syntax--curly"] [class^="syntax--meta syntax--group syntax--css"] {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-[class^="meta source embedded"],
-[class^="entity other django tagbraces"] {
+[class^="syntax--meta syntax--source syntax--embedded"],
+[class^="syntax--entity syntax--other syntax--django syntax--tagbraces"] {
   color: #999999;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-[class^="source js"] [class^="meta group braces round"],
-[class^="meta scope heredoc"] {
+[class^="syntax--source syntax--js"] [class^="syntax--meta syntax--group syntax--braces syntax--round"],
+[class^="syntax--meta syntax--scope syntax--heredoc"] {
 }
 
-[class^="source ruby"] [class^="meta even-tab"],
-[class^="source ruby"] [class^="meta even-tab group2"],
-[class^="source ruby"] [class^="meta even-tab group4"],
-[class^="source ruby"] [class^="meta even-tab group6"],
-[class^="source ruby"] [class^="meta even-tab group8"],
-[class^="source ruby"] [class^="meta even-tab group10"],
-[class^="source ruby"] [class^="meta even-tab group12"] {
+[class^="syntax--source syntax--ruby"] [class^="syntax--meta syntax--even-tab"],
+[class^="syntax--source syntax--ruby"] [class^="syntax--meta syntax--even-tab syntax--group2"],
+[class^="syntax--source syntax--ruby"] [class^="syntax--meta syntax--even-tab syntax--group4"],
+[class^="syntax--source syntax--ruby"] [class^="syntax--meta syntax--even-tab syntax--group6"],
+[class^="syntax--source syntax--ruby"] [class^="syntax--meta syntax--even-tab syntax--group8"],
+[class^="syntax--source syntax--ruby"] [class^="syntax--meta syntax--even-tab syntax--group10"],
+[class^="syntax--source syntax--ruby"] [class^="syntax--meta syntax--even-tab syntax--group12"] {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-[class^="meta block slate"] {
+[class^="syntax--meta syntax--block syntax--slate"] {
   color: #999999;
 }
 
-[class^="meta block content slate"] {
+[class^="syntax--meta syntax--block syntax--content syntax--slate"] {
   color: #333333;
 }
 
-:not(.has-selection) > .scroll-view [class^="meta bracketed"],
-:not(.has-selection) > .scroll-view [class^="meta odd-tab group1"],
-:not(.has-selection) > .scroll-view [class^="meta group braces"],
-:not(.has-selection) > .scroll-view [class^="meta block slate"],
-:not(.has-selection) > .scroll-view [class^="text xml strict"] [class^="meta tag"],
-:not(.has-selection) > .scroll-view [class^="meta paren-group"],
-:not(.has-selection) > .scroll-view [class^="meta section"] {
+/*:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--bracketed"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--odd-tab syntax--group1"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--group syntax--braces"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--block syntax--slate"],
+:not(.has-selection) > .scroll-view [class^="syntax--text syntax--xml syntax--strict"] [class^="syntax--meta syntax--tag"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--paren-group"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--section"] {
   background-color: #FAFAFA;
 }
 
-:not(.has-selection) > .scroll-view [class^="meta bracketed"] [class^="meta bracketed"],
-:not(.has-selection) > .scroll-view [class^="meta even-tab group2"],
-:not(.has-selection) > .scroll-view [class^="meta group braces"] [class^="meta group braces"],
-:not(.has-selection) > .scroll-view [class^="meta block slate"] [class^="meta block slate"],
-:not(.has-selection) > .scroll-view [class^="text xml strict"] [class^="meta tag"] [class^="meta tag"],
-:not(.has-selection) > .scroll-view [class^="meta group braces"] [class^="meta group braces"],
-:not(.has-selection) > .scroll-view [class^="meta paren-group"] [class^="meta paren-group"],
-:not(.has-selection) > .scroll-view [class^="meta section"] [class^="meta section"] {
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--even-tab syntax--group2"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"],
+:not(.has-selection) > .scroll-view [class^="syntax--text syntax--xml syntax--strict"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] {
   background-color: #F5F5F5;
 }
 
-:not(.has-selection) > .scroll-view [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"],
-:not(.has-selection) > .scroll-view [class^="meta odd-tab group3"],
-:not(.has-selection) > .scroll-view [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
-:not(.has-selection) > .scroll-view [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"],
-:not(.has-selection) > .scroll-view [class^="text xml strict"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"],
-:not(.has-selection) > .scroll-view [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
-:not(.has-selection) > .scroll-view [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"],
-:not(.has-selection) > .scroll-view [class^="meta section"] [class^="meta section"] [class^="meta section"] {
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--odd-tab syntax--group3"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"],
+:not(.has-selection) > .scroll-view [class^="syntax--text syntax--xml syntax--strict"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] {
   background-color: #EEEEEE;
 }
 
-:not(.has-selection) > .scroll-view [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"],
-:not(.has-selection) > .scroll-view [class^="meta even-tab group4"],
-:not(.has-selection) > .scroll-view [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
-:not(.has-selection) > .scroll-view [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"],
-:not(.has-selection) > .scroll-view [class^="text xml strict"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"],
-:not(.has-selection) > .scroll-view [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
-:not(.has-selection) > .scroll-view [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"],
-:not(.has-selection) > .scroll-view [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] {
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--even-tab syntax--group4"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"],
+:not(.has-selection) > .scroll-view [class^="syntax--text syntax--xml syntax--strict"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] {
   background-color: #EAEAEA;
 }
 
-:not(.has-selection) > .scroll-view [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"],
-:not(.has-selection) > .scroll-view [class^="meta odd-tab group5"],
-:not(.has-selection) > .scroll-view [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
-:not(.has-selection) > .scroll-view [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"],
-:not(.has-selection) > .scroll-view [class^="text xml strict"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"],
-:not(.has-selection) > .scroll-view [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
-:not(.has-selection) > .scroll-view [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"],
-:not(.has-selection) > .scroll-view [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] {
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--odd-tab syntax--group5"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"],
+:not(.has-selection) > .scroll-view [class^="syntax--text syntax--xml syntax--strict"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] {
   background-color: #E6E6E6;
 }
 
-:not(.has-selection) > .scroll-view [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"],
-:not(.has-selection) > .scroll-view [class^="meta even-tab group6"],
-:not(.has-selection) > .scroll-view [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
-:not(.has-selection) > .scroll-view [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"],
-:not(.has-selection) > .scroll-view [class^="text xml strict"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"],
-:not(.has-selection) > .scroll-view [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
-:not(.has-selection) > .scroll-view [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"],
-:not(.has-selection) > .scroll-view [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] {
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--even-tab syntax--group6"],
+:not(.has-selection) > .scroll-view [class^="syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"],
+:not(.has-selection) > .scroll-view [class^="syntax--text syntax--xml syntax--strict"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] {
   background-color: #E3E3E3;
 }
 
-:not(.has-selection) > .scroll-view [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"],
-:not(.has-selection) > .scroll-view [class^="meta odd-tab group7"],
-:not(.has-selection) > .scroll-view [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
-:not(.has-selection) > .scroll-view [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"],
-:not(.has-selection) > .scroll-view [class^="text xml strict"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"],
-:not(.has-selection) > .scroll-view [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
-:not(.has-selection) > .scroll-view [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"],
-:not(.has-selection) > .scroll-view [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] {
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--odd-tab syntax--group7"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"],
+:not(.has-selection) > .scroll-view [class^="syntax--text syntax--xml syntax--strict"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] {
   background-color: #E0E0E0;
 }
 
-:not(.has-selection) > .scroll-view [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"],
-:not(.has-selection) > .scroll-view [class^="meta even-tab group8"],
-:not(.has-selection) > .scroll-view [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
-:not(.has-selection) > .scroll-view [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"],
-:not(.has-selection) > .scroll-view [class^="text xml strict"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"],
-:not(.has-selection) > .scroll-view [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
-:not(.has-selection) > .scroll-view [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"],
-:not(.has-selection) > .scroll-view [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] {
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--even-tab syntax--group8"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"],
+:not(.has-selection) > .scroll-view [class^="syntax--text syntax--xml syntax--strict"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] {
   background-color: #DEDEDE;
 }
 
-:not(.has-selection) > .scroll-view [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"] [class^="meta bracketed"],
-:not(.has-selection) > .scroll-view [class^="meta odd-tab group9"],
-:not(.has-selection) > .scroll-view [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
-:not(.has-selection) > .scroll-view [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"] [class^="meta block slate"],
-:not(.has-selection) > .scroll-view [class^="text xml strict"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"] [class^="meta tag"],
-:not(.has-selection) > .scroll-view [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"] [class^="meta group braces"],
-:not(.has-selection) > .scroll-view [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"] [class^="meta paren-group"],
-:not(.has-selection) > .scroll-view [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] [class^="meta section"] {
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"] [class^="syntax--meta syntax--bracketed"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--odd-tab syntax--group9"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"] [class^="syntax--meta syntax--block syntax--slate"],
+:not(.has-selection) > .scroll-view [class^="syntax--text syntax--xml syntax--strict"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"] [class^="syntax--meta syntax--tag"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"] [class^="syntax--meta syntax--group syntax--braces"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"] [class^="syntax--meta syntax--paren-group"],
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] [class^="syntax--meta syntax--section"] {
   background-color: #DBDBDB;
 }
 
-:not(.has-selection) > .scroll-view [class^="meta even-tab group10"] {
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--even-tab syntax--group10"] {
   background-color: #E0E0E0;
 }
 
-:not(.has-selection) > .scroll-view [class^="meta odd-tab group11"] {
+:not(.has-selection) > .scroll-view [class^="syntax--meta syntax--odd-tab syntax--group11"] {
   background-color: #EAEAEA;
 }
-
-[class^="meta invalid vendor microsoft trident"] {
+*/
+[class^="syntax--meta syntax--invalid syntax--vendor syntax--microsoft syntax--trident"] {
   text-decoration: underline;
   background-color: rgba(170, 28, 33, 0.25);
 }
